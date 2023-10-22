@@ -1,0 +1,10 @@
+A1 B1 B2
+B1 C1 C2
+B2 S1 S2
+C1 X S3
+C2 S4 X
+S1 X X
+S2 X X
+S3 X X
+S4 X X
+X X X
