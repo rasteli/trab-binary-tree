@@ -9,9 +9,21 @@ BinaryTree::BinaryTree() {
   root = NULL;
 }
 
-// BinaryTree::~BinaryTree() {
-//   Clear(root);    
-// }
+BinaryTree::~BinaryTree() {
+  Clear(root);    
+}
+
+void BinaryTree::Clear() {
+  Clear(root);
+}
+
+void BinaryTree::Clear(TreeNode *&r) {
+  if (r == NULL) return;
+  
+  Clear(r->leftNode);
+  Clear(r->rightNode);
+  delete r;
+}
 
 void BinaryTree::Insert(std::string x1, std::string x2, std::string x3) {
   TreeNode *left_node, *right_node;
@@ -105,7 +117,8 @@ void BinaryTree::Data() {
   Data(root);
 }
 
-void BinaryTree::Data(TreeNode *&r) {
+// Imprime o resultado
+void BinaryTree::Data(TreeNode *r) {
   if (r == NULL) return;
 
   int children = 0;

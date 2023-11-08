@@ -16,23 +16,23 @@ class BinaryTree {
     TreeNode *root;
 
     bool Search(std::string x, TreeNode *r, TreeNode *&p);
-    void Clear(TreeNode *r);
+    void Clear(TreeNode *&r);
     void Print(TreeNode *&t, int s);
     void CreateNode(std::string x, TreeNode *&node);
     int Nodes(TreeNode *r);
     int Leaves(TreeNode *r);
-    void Data(TreeNode *&r);
+    void Data(TreeNode *r); // Imprime o resultado
 
   public:
     BinaryTree();
-    // ~BinaryTree();
+    ~BinaryTree();
     void Insert(std::string x1, std::string x2, std::string x3);
     bool Search(std::string x);
     void Clear();
     void Print();
     int Nodes();
     int Leaves();
-    void Data();
+    void Data(); // Imprime o resultado
 };
 
 #endif
