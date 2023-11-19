@@ -8,7 +8,7 @@
 int main() {
   BinaryTree t;
   std::string root, left_node, right_node;
-  std::ifstream file("test/exemplo1.tree", std::ios::in);
+  std::ifstream file("test/exemplo2.tree", std::ios::in);
 
   while (file >> root >> left_node >> right_node) {
     if (root != EmptyKey)

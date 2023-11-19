@@ -26,6 +26,9 @@ void BinaryTree::Clear(TreeNode *&r) {
 }
 
 void BinaryTree::Insert(std::string x1, std::string x2, std::string x3) {
+  //pós-condição: se a árvore estiver vazia, cria o nó raiz com valor x1. Caso contrário,
+  //procura o nó com valor x1. Independentemente insere os nós com valores x2 e x3 como filhos
+  //do nó x1.
   TreeNode *left_node, *right_node;
 
   CreateNode(x2, left_node);
